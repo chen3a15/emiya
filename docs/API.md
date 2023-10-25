@@ -15,7 +15,7 @@ from libs.event.qqevent import onkeyword
 async def foo(n):
     result = await n.callAPI(url="API", param1="value", param2="value")
     # result API的响应
-    # API    需要调用的api
+    # url    API终结点
     # param1 参数1
     # param2 参数2
 ```
@@ -57,7 +57,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取登录号信息
 
-终结点：`/get_login_info`
+终结点：`get_login_info`
 
 ::: tip 提示
 该 API 无需参数
@@ -74,7 +74,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 设置登录号资料
 
-终结点：`/set_qq_profile`
+终结点：`set_qq_profile`
 
 | 字段名          | 数据类型 | 默认值 | 说明     |
 | --------------- | -------- | ------ | -------- |
@@ -96,7 +96,7 @@ API 的响应是一个 JSON 数据, 如下:
 该API只有企点协议可用
 :::
 
-终结点: `/qidian_get_account_info`
+终结点: `qidian_get_account_info`
 
 ::: tip 提示
 该 API 无需参数
@@ -110,7 +110,7 @@ API 的响应是一个 JSON 数据, 如下:
 有关例子可从[这个链接](https://github.com/Mrs4s/go-cqhttp/pull/872#issuecomment-831180149)找到
 :::
 
-终结点：`/_get_model_show`
+终结点：`_get_model_show`
 
 **参数**
 
@@ -139,7 +139,7 @@ API 的响应是一个 JSON 数据, 如下:
 有关例子可从[这个链接](https://github.com/Mrs4s/go-cqhttp/pull/872#issuecomment-831180149)找到
 :::
 
-终结点：`/_set_model_show`
+终结点：`_set_model_show`
 
 **参数**
 
@@ -156,7 +156,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取当前账号在线客户端列表
 
-终结点：`/get_online_clients`
+终结点：`get_online_clients`
 
 **参数**
 
@@ -186,7 +186,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取陌生人信息
 
-终结点：`/get_stranger_info`
+终结点：`get_stranger_info`
 
 **参数**
 
@@ -211,7 +211,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取好友列表
 
-终结点：`/get_friend_list`
+终结点：`get_friend_list`
 
 ::: tip 提示
 该 API 无需参数
@@ -231,7 +231,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取单向好友列表
 
-终结点：`/get_unidirectional_friend_list`
+终结点：`get_unidirectional_friend_list`
 
 ::: tip 提示
 该 API 无需参数
@@ -259,7 +259,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 删除好友
 
-终结点：`/delete_friend`
+终结点：`delete_friend`
 
 **参数**
 
@@ -275,7 +275,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 删除单向好友
 
-终结点：`/delete_unidirectional_friend`
+终结点：`delete_unidirectional_friend`
 
 **参数**
 
@@ -301,7 +301,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 发送私聊消息
 
-终结点：`/send_private_msg`
+终结点：`send_private_msg`
 
 **参数**
 
@@ -320,7 +320,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ###  发送群聊消息
 
-终结点：`/send_group_msg`
+终结点：`send_group_msg`
 
 **参数**
 
@@ -340,7 +340,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 发送消息
 
-终结点：`/send_msg`
+终结点：`send_msg`
 
 **参数**
 
@@ -362,7 +362,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取消息
 
-终结点: `/get_msg`
+终结点: `get_msg`
 
 **参数**
 
@@ -403,7 +403,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 撤回消息
 
-终结点：`/delete_msg`
+终结点：`delete_msg`
 
 **参数**
 
@@ -419,7 +419,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 标记消息已读
 
-终结点: `/mark_msg_as_read`
+终结点: `mark_msg_as_read`
 
 **参数**
 
@@ -435,7 +435,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取合并转发内容
 
-终结点: `/get_forward_msg`
+终结点: `get_forward_msg`
 
 **参数**
 
@@ -486,7 +486,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 发送合并转发 ( 群聊 )
 
-终结点: `/send_group_forward_msg`
+终结点: `send_group_forward_msg`
 
 **参数**
 
@@ -506,7 +506,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 发送合并转发 ( 好友 )
 
-终结点: `/send_private_forward_msg`
+终结点: `send_private_forward_msg`
 
 **参数**
 
@@ -526,7 +526,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取群消息历史记录
 
-终结点：`/get_group_msg_history`
+终结点：`get_group_msg_history`
 
 **参数** 
 
@@ -557,7 +557,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 获取图片信息
 
-终结点: `/get_image`
+终结点: `get_image`
 
 ::: warning 注意
 该接口为 CQHTTP 接口修改
@@ -581,7 +581,7 @@ API 的响应是一个 JSON 数据, 如下:
 
 ### 检查是否可以发送图片
 
-终结点：`/can_send_image`
+终结点：`can_send_image`
 
 ::: tip 提示
 该 API 无需参数
@@ -605,7 +605,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 [go-cqhttp-v0.9.34更新日志](https://github.com/Mrs4s/go-cqhttp/releases/tag/v0.9.34)
 :::
 
-终结点: `/ocr_image`或`/.ocr_image`
+终结点: `ocr_image`或`.ocr_image`
 
 **参数**
 
@@ -643,7 +643,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 [提交 pr](https://github.com/Mrs4s/go-cqhttp/compare)
 :::
 
-终结点：`/get_record`
+终结点：`get_record`
 
 ::: tip 提示
 要使用此接口, 通常需要安装 ffmpeg, 请参考 OneBot 实现的相关说明。
@@ -666,7 +666,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 
 ### 检查是否可以发送语音
 
-终结点：`/can_send_record`
+终结点：`can_send_record`
 
 ::: tip 提示
 该 API 无需参数
@@ -688,7 +688,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 
 ### 处理加好友请求
 
-终结点：`/set_friend_add_request`
+终结点：`set_friend_add_request`
 
 **参数**
 
@@ -706,7 +706,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 
 ### 处理加群请求／邀请
 
-终结点：`/set_group_add_request`
+终结点：`set_group_add_request`
 
 **参数**
 
@@ -740,7 +740,7 @@ ocr_image API移除了实验模式, 目前版本 .ocr_image 和 ocr_image 均能
 
 ### 获取群信息
 
-终结点：`/get_group_info`
+终结点：`get_group_info`
 
 **参数**
 
@@ -778,7 +778,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群列表
 
-终结点：`/get_group_list`
+终结点：`get_group_list`
 
 **参数**
 
@@ -794,7 +794,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群成员信息
 
-终结点：`/get_group_member_info`
+终结点：`get_group_member_info`
 
 **参数**
 
@@ -829,7 +829,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群成员列表
 
-终结点：`/get_group_member_list`
+终结点：`get_group_member_list`
 
 **参数**
 
@@ -846,7 +846,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群荣誉信息
 
-终结点：`/get_group_honor_info`
+终结点：`get_group_honor_info`
 
 **参数**
 
@@ -889,7 +889,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群系统消息
 
-终结点: `/get_group_system_msg`
+终结点: `get_group_system_msg`
 
 **响应数据**
 
@@ -935,7 +935,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取精华消息列表
 
-终结点: `/get_essence_msg_list`
+终结点: `get_essence_msg_list`
 
 **参数**
 
@@ -961,7 +961,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群 @全体成员 剩余次数
 
-终结点: `/get_group_at_all_remain`
+终结点: `get_group_at_all_remain`
 
 **参数**
 
@@ -989,7 +989,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置群名
 
-终结点：`/set_group_name`
+终结点：`set_group_name`
 
 **参数**
 
@@ -1006,7 +1006,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置群头像
 
-终结点: `/set_group_portrait`
+终结点: `set_group_portrait`
 
 **参数**
 
@@ -1030,7 +1030,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置群管理员
 
-终结点：`/set_group_admin`
+终结点：`set_group_admin`
 
 **参数**
 
@@ -1048,7 +1048,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置群名片 ( 群备注 )
 
-终结点：`/set_group_card`
+终结点：`set_group_card`
 
 **参数**
 
@@ -1066,7 +1066,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置群组专属头衔
 
-终结点：`/set_group_special_title`
+终结点：`set_group_special_title`
 
 **参数**
 
@@ -1091,7 +1091,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 群单人禁言
 
-终结点：`/set_group_ban`
+终结点：`set_group_ban`
 
 **参数**
 
@@ -1109,7 +1109,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 群全员禁言
 
-终结点：`/set_group_whole_ban`
+终结点：`set_group_whole_ban`
 
 **参数**
 
@@ -1130,7 +1130,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 该 API 从 go-cqhttp-v0.9.36 开始支持
 :::
 
-终结点：`/set_group_anonymous_ban`
+终结点：`set_group_anonymous_ban`
 
 **参数**
 
@@ -1153,7 +1153,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 设置精华消息
 
-终结点: `/set_essence_msg`
+终结点: `set_essence_msg`
 
 **参数**
 
@@ -1169,7 +1169,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 移出精华消息
 
-终结点: `/delete_essence_msg`
+终结点: `delete_essence_msg`
 
 **参数**
 
@@ -1185,7 +1185,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 群打卡
 
-终结点：`/send_group_sign`
+终结点：`send_group_sign`
 
 | 字段名     | 数据类型 | 说明 |
 | ---------- | -------- | ---- |
@@ -1199,7 +1199,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 群设置匿名
 
-终结点：`/set_group_anonymous`
+终结点：`set_group_anonymous`
 
 **参数**
 
@@ -1217,7 +1217,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 ### 发送群公告
 
 
-终结点： `/_send_group_notice`
+终结点： `_send_group_notice`
 
 **参数**
 
@@ -1237,7 +1237,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 ### 获取群公告
 
 
-终结点： `/_get_group_notice`
+终结点： `_get_group_notice`
 
 **参数**
 
@@ -1275,7 +1275,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 群组踢人
 
-终结点：`/set_group_kick`
+终结点：`set_group_kick`
 
 **参数**
 
@@ -1293,7 +1293,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 退出群组
 
-终结点：`/set_group_leave`
+终结点：`set_group_leave`
 
 **参数**
 
@@ -1316,7 +1316,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 上传群文件
 
-终结点: `/upload_group_file`
+终结点: `upload_group_file`
 
 **参数**
 
@@ -1341,7 +1341,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 `File` 对象信息请参考最下方
 :::
 
-终结点: `/delete_group_file`
+终结点: `delete_group_file`
 
 **参数**
 
@@ -1363,7 +1363,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 仅能在根目录创建文件夹
 :::
 
-终结点: `/create_group_file_folder`
+终结点: `create_group_file_folder`
 
 **参数**
 
@@ -1385,7 +1385,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 `Folder` 对象信息请参考最下方
 :::
 
-终结点: `/delete_group_folder`
+终结点: `delete_group_folder`
 
 | 字段        | 类型   | 说明                        |
 | ----------- | ------ | --------------------------- |
@@ -1400,7 +1400,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取群文件系统信息
 
-终结点: `/get_group_file_system_info`
+终结点: `get_group_file_system_info`
 
 **参数**
 
@@ -1425,7 +1425,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 `File` 和 `Folder` 对象信息请参考最下方
 :::
 
-终结点: `/get_group_root_files`
+终结点: `get_group_root_files`
 
 **参数**
 
@@ -1448,7 +1448,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 `File` 和 `Folder` 对象信息请参考最下方
 :::
 
-终结点: `/get_group_files_by_folder`
+终结点: `get_group_files_by_folder`
 
 **参数**
 
@@ -1472,7 +1472,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 `File` 和 `Folder` 对象信息请参考最下方
 :::
 
-终结点: `/get_group_file_url`
+终结点: `get_group_file_url`
 
 **参数**
 
@@ -1520,7 +1520,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 上传私聊文件
 
-终结点: `/upload_private_file`
+终结点: `upload_private_file`
 
 **参数**
 
@@ -1559,7 +1559,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 [提交 pr](https://github.com/Mrs4s/go-cqhttp/compare)
 :::
 
-终结点：`/get_cookies`
+终结点：`get_cookies`
 
 **参数**
 
@@ -1580,7 +1580,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 [提交 pr](https://github.com/Mrs4s/go-cqhttp/compare)
 :::
 
-终结点：`/get_csrf_token`
+终结点：`get_csrf_token`
 
 ::: tip 提示
 该 API 无需参数
@@ -1603,7 +1603,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 即上面两个接口的合并
 :::
 
-终结点：`/get_credentials`
+终结点：`get_credentials`
 
 **参数**
 
@@ -1622,7 +1622,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取版本信息
 
-终结点：`/get_version_info`
+终结点：`get_version_info`
 
 ::: tip 提示
 该 API 无需参数
@@ -1651,7 +1651,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 获取状态
 
-终结点: `/get_status`
+终结点: `get_status`
 
 **响应数据**
 
@@ -1692,7 +1692,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 [#1230](https://github.com/Mrs4s/go-cqhttp/issues/1230)
 :::
 
-终结点：`/set_restart`
+终结点：`set_restart`
 
 由于重启 go-cqhttp 实现同时需要重启 API 服务, 这意味着当前的 API 请求会被中断, 因此需要异步地重启, 接口返回的 `status` 是 `async`。
 
@@ -1715,7 +1715,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 [提交 pr](https://github.com/Mrs4s/go-cqhttp/compare)
 :::
 
-终结点：`/clean_cache`
+终结点：`clean_cache`
 
 用于清理积攒了太多的缓存文件。
 
@@ -1728,7 +1728,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 重载事件过滤器
 
-终结点：`/reload_event_filter`
+终结点：`reload_event_filter`
 
 **参数**
 
@@ -1742,7 +1742,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 
 ### 下载文件到缓存目录
 
-终结点: `/download_file`
+终结点: `download_file`
 
 **参数**
 
@@ -1789,7 +1789,7 @@ JSON数组:
 
 ### 检查链接安全性
 
-终结点：`/check_url_safely`
+终结点：`check_url_safely`
 
 **参数**
 
@@ -1811,7 +1811,7 @@ JSON数组:
 隐藏 API 是不建议一般用户使用的, 它们只应该在 OneBot 实现内部或由 SDK 和框架使用, 因为不正确的使用可能造成程序运行不正常。
 :::
 
-终结点: `/.get_word_slices`
+终结点: `.get_word_slices`
 
 **参数**
 
@@ -1833,7 +1833,7 @@ JSON数组:
 隐藏 API 是不建议一般用户使用的, 它们只应该在 OneBot 实现内部或由 SDK 和框架使用, 因为不正确的使用可能造成程序运行不正常。
 :::
 
-终结点：`/.handle_quick_operation`
+终结点：`.handle_quick_operation`
 
 关于事件的快速操作, 见 [快速操作](../event/#快速操作)。
 
@@ -1847,3 +1847,420 @@ JSON数组:
 ::: tip 提示
 该 API 没有响应数据
 :::
+
+
+# 频道 API
+
+### 获取频道系统内BOT的资料
+
+终结点: `get_guild_service_profile`
+
+**响应数据**
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `nickname`    | string | 昵称      |
+| `tiny_id`     | string | 自身的ID   |
+| `avatar_url`  | string | 头像链接   |
+
+### 获取频道列表
+
+终结点: `get_guild_list`
+
+**响应数据**
+
+正常情况下响应 `GuildInfo` 数组, 未加入任何频道响应 `null`
+
+GuildInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `guild_id`    | string | 频道ID      |
+| `guild_name`     | string | 频道名称   |
+| `guild_display_id`  | int64 | 频道显示ID, 公测后可能作为搜索ID使用  |
+
+### 通过访客获取频道元数据
+
+终结点: `get_guild_meta_by_guest`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+
+**响应数据**
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `guild_id`    | string | 频道ID      |
+| `guild_name`     | string | 频道名称   |
+| `guild_profile`  | string | 频道简介  |
+| `create_time`  | int64 | 创建时间  |
+| `max_member_count`  | int64 | 频道人数上限  |
+| `max_robot_count`  | int64 | 频道BOT数上限  |
+| `max_admin_count`  | int64 | 频道管理员人数上限  |
+| `member_count`  | int64 | 已加入人数  |
+| `owner_id`  | string | 创建者ID  |
+
+### 获取子频道列表
+
+终结点: `get_guild_channel_list`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `no_cache` | bool  | 是否无视缓存 |
+
+**响应数据**
+
+正常情况下响应 `ChannelInfo` 数组, 未找到任何子频道响应 `null`
+
+ChannelInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `owner_guild_id`    | string | 所属频道ID      |
+| `channel_id`     | string | 子频道ID   |
+| `channel_type`     | int32 | 子频道类型   |
+| `channel_name`  | string | 子频道名称  |
+| `create_time`  | int64 | 创建时间  |
+| `creator_tiny_id`  | string | 创建者ID  |
+| `talk_permission`  | int32 | 发言权限类型  |
+| `visible_type`  | int32 | 可视性类型  |
+| `current_slow_mode`  | int32 | 当前启用的慢速模式Key  |
+| `slow_modes`  | []SlowModeInfo | 频道内可用慢速模式类型列表|
+
+SlowModeInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `slow_mode_key`    | int32 | 慢速模式Key   |
+| `slow_mode_text`     | string | 慢速模式说明   |
+| `speak_frequency`  | int32 | 周期内发言频率限制  |
+| `slow_mode_circle`  | int32 | 单位周期时间, 单位秒 |
+
+已知子频道类型列表
+
+| 类型          |  说明       |
+| ------------- | ---------- |
+| 1    | 文字频道  |
+| 2     | 语音频道  |
+| 5  |  直播频道  |
+| 7  |  主题频道  |
+
+### 获取频道成员列表
+
+终结点: `get_guild_member_list`
+
+> 由于频道人数较多(数万), 请尽量不要全量拉取成员列表, 这将会导致严重的性能问题
+>
+> 尽量使用 `get_guild_member_profile` 接口代替全量拉取
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `next_token` | string | 翻页Token |
+
+> `next_token` 为空的情况下, 将返回第一页的数据, 并在返回值附带下一页的 `token`
+
+**响应数据**
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `members`    | []GuildMemberInfo | 成员列表   |
+| `finished`    | bool | 是否最终页   |
+| `next_token`    | string | 翻页Token   |
+
+GuildMemberInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `tiny_id`    | string | 成员ID   |
+| `title`    | string | 成员头衔   |
+| `nickname`    | string | 成员昵称   |
+| `role_id`    | string | 所在权限组ID   |
+| `role_name`    | string | 所在权限组名称   |
+
+> 默认情况下频道管理员的权限组ID为 `2`, 部分频道可能会另行创建, 需手动判断
+>
+> 此接口仅展现最新的权限组, 获取用户加入的所有权限组请使用 `get_guild_member_profile` 接口
+
+### 单独获取频道成员信息
+
+终结点: `get_guild_member_profile`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `user_id` | string | 用户ID |
+
+**响应数据**
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `tiny_id`    | string | 用户ID     |
+| `nickname`    | string | 用户昵称     |
+| `avatar_url`    | string | 头像地址     |
+| `join_time`    | int64 | 加入时间     |
+| `roles`    | []RoleInfo | 加入的所有权限组    |
+
+RoleInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `role_id`    | string | 权限组ID     |
+| `role_name`   | string | 权限组名称     |
+
+### 发送信息到子频道
+
+终结点: `send_guild_channel_msg`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `channel_id` | string | 子频道ID |
+| `message` | Message | 消息, 与原有消息类型相同 |
+
+**响应数据**
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `message_id`    | string | 消息ID     |
+
+### 获取话题频道帖子
+
+终结点: `get_topic_channel_feeds`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `channel_id` | string | 子频道ID |
+
+**响应数据**
+
+返回 `FeedInfo` 数组
+
+FeedInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `id`   | string | 帖子ID     |
+| `channel_id`    | string | 子频道ID     |
+| `guild_id`   | string | 频道ID     |
+| `create_time`   | int64 | 发帖时间     |
+| `title`   | string | 帖子标题     |
+| `sub_title`   | string | 帖子副标题  |
+| `poster_info`   | PosterInfo | 发帖人信息  |
+| `resource`   | ResourceInfo | 媒体资源信息  |
+| `resource.images`   | []FeedMedia | 帖子附带的图片列表 |
+| `resource.videos`   | []FeedMedia | 帖子附带的视频列表 |
+| `contents`   | []FeedContent | 帖子内容 |
+
+PosterInfo:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `tiny_id`   | string | 发帖人ID     |
+| `nickname`    | string | 发帖人昵称     |
+| `icon_url`   | string | 发帖人头像链接   |
+
+FeedMedia:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `file_id`   | string | 媒体ID     |
+| `pattern_id`    | string |   控件ID?(不确定)   |
+| `url`   | string | 媒体链接   |
+| `height`   | int32 | 媒体高度  |
+| `width`   | int32 | 媒体宽度  |
+
+FeedContent:
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `type`   | string |  内容类型    |
+| `data`    | Data |   内容数据   |
+
+#### 内容类型列表:
+
+|  类型  | 说明       |
+|  ----- | ---------- |
+| `text` |  文本   |
+| `face` |  表情   |
+| `at` |  At  |
+| `url_quote` |  链接引用   |
+| `channel_quote` |  子频道引用  |
+
+#### 内容类型对应数据列表:
+
+- `text`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `text`   | string |  文本内容    |
+
+- `face`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `id`   | string |  表情ID    |
+
+- `at`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `id`   | string |  目标ID    |
+| `qq`   | string |  目标ID, 为确保和 `array message` 的一致性保留    |
+
+- `url_quote`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `display_text`   | string |  显示文本    |
+| `url`   | string |  链接    |
+
+- `channel_quote`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `display_text`   | string |  显示文本    |
+| `guild_id`   | string |  频道ID    |
+| `channel_id`   | string |  子频道ID    |
+
+### 删除频道角色
+
+终结点: `delete_guild_role`
+
+**参数**
+
+| 字段       | 类型  | 说明 |
+| ---------- | ----- | ---- |
+| `guild_id` | string | 频道ID |
+| `role_id` | string | 角色ID |
+
+::: tip 提示
+该 API 无响应数据
+:::
+
+### 获取频道消息
+
+终结点: `get_guild_msg`
+
+**参数**
+
+| 字段       | 类型  | 默认值  | 说明 |
+| ---------- | ----- | ----- | ---- |
+| `message_id` | string | - | 频道消息ID |
+| `no_cache` | bool | false | 是否不使用缓存（使用缓存可能更新不及时, 但响应更快） |
+
+**响应数据**
+
+| 字段名          | 数据类型  | 说明    |
+|--------------|-------|-------|
+| `channel_id` | string | 子频道ID |
+| `guild_id` | string | 频道ID |
+| `message` | string | 消息内容 |
+| `message_id` | string | 消息ID |
+| `message_seq` | int64 | 消息序号(你可以理解为第几条消息,历史) |
+| `message_source` | string | 消息来源(channel,direct) |
+| `sender` | object | 发送人信息 |
+| `reactions` | array | 未知,目前恒定为空 |
+| `time` | int64 | 发送消息时时间戳(10位) |
+
+- `sender`
+
+| 字段          | 类型  | 说明       |
+| ------------- | ----- | ---------- |
+| `nickname`   | string |  发送人昵称    |
+| `tiny_id`   | string |  发送人ID    |
+| `user_id`   | int64 |  发送人ID    |
+
+### 获取频道角色列表
+
+终结点: `get_guild_roles`
+
+**参数**
+
+| 字段       | 类型  | 默认值  | 说明 |
+| ---------- | ----- | ----- | ---- |
+| `guild_id` | string | - | 频道ID |
+
+**响应数据(数组)**
+
+| 字段名          | 数据类型  | 说明    |
+|--------------|-------|-------|
+| `argb_color` | int64 | 颜色值(示例:4294927682) |
+| `disabled` | bool | 是否启用 |
+| `independent` | bool | 未知 |
+| `max_count` | int32 | 最大多少人拥有此角色 |
+| `member_count` | int32 | 多少人拥有此角色 |
+| `owned` | bool | 未知 |
+| `role_id` | string | 角色id |
+| `role_name` | string | 角色名 |
+
+### 设置用户在频道中的角色
+
+终结点: `set_guild_member_role`
+
+**参数**
+
+| 字段       | 类型  | 默认值  | 说明 |
+| ---------- | ----- | ----- | ---- |
+| `guild_id` | string | - | 频道ID |
+| `set` | bool | false | 是否设置(默认假，取消) |
+| `role_id` | string | - | 频道ID |
+| `users` | string|array | - | 角色id,可传字符串数组批量设置 |
+
+::: tip 提示
+该 API 无响应数据
+:::
+
+### 修改频道角色
+
+终结点: `update_guild_role`
+
+**参数**
+
+| 字段       | 类型  | 默认值  | 说明 |
+| ---------- | ----- | ----- | ---- |
+| `guild_id` | string | - | 频道ID |
+| `role_id` | string | - | 角色ID |
+| `name` | string | - | 角色名 |
+| `color` | string | - | 颜色(示例:4294927682) |
+| `independent` | bool | false | 未知 |
+
+
+::: tip 提示
+该 API 无响应数据
+:::
+
+### 创建频道角色
+
+终结点: `create_guild_role`
+
+**参数**
+
+| 字段       | 类型  | 默认值  | 说明 |
+| ---------- | ----- | ----- | ---- |
+| `guild_id` | string | - | 频道ID |
+| `color` | string | - | 颜色 |
+| `name` | string | - | 角色名 |
+| `independent` | bool | false | 未知 |
+| `initial_users` | array|string | - | 创建后把哪些用户设置为这个角色,可字符串数组批量设置 |
+
+**响应数据(数组)**
+
+| 字段名          | 数据类型  | 说明    |
+|--------------|-------|-------|
+| `role_id` | int64 | 角色id |
