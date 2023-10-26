@@ -958,7 +958,7 @@ https://p.qlogo.cn/gh/{group_id}/{group_id}/100
 | `message_id`    | int32    | 消息ID       |
 
 
-
+<span id="asdf">asdf</span>
 ### 获取群 @全体成员 剩余次数
 
 终结点: `get_group_at_all_remain`
