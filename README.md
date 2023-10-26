@@ -3,7 +3,7 @@
 <img src='YA.png' width='200' alt='logo' aling='middle'/>
 </p>
 
-<a href="https://github.com/chen3a15/emiya/blob/doc/docs/规范.md#6.三个禁止操作：">测试</a>
+<a href="https://github.com/chen3a15/emiya/blob/doc/docs/API.md#频道 API">测试</a>
 <div align="center">
 
 # emiya
