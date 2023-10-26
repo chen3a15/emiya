@@ -3,7 +3,7 @@
 <img src='YA.png' width='200' alt='logo' aling='middle'/>
 </p>
 
-<a href="https://github.com/Lixeer/emiya/blob/main/docs/plugins-docs/netpackage.md#GroupMessage"></a>
+<a href="https://github.com/Lixeer/emiya/blob/main/docs/plugins-docs/netpackage.md#GroupMessage">测试</a>
 <div align="center">
 
 # emiya
