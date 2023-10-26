@@ -3,7 +3,7 @@
 <img src='YA.png' width='200' alt='logo' aling='middle'/>
 </p>
 
-<a href="https://github.com/chen3a15/emiya/blob/doc/docs/API.md#asdf">asdf</a>
+<a href="https://github.com/chen3a15/emiya/blob/doc/docs/API.md#频道 API"># 频道 API</a>
 
 <div align="center">
 
